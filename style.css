@@ -1,0 +1,332 @@
+/* style.css */
+/* Old Colors:
+   header and footer background-color: #679898;
+   body background-color: #346565;
+   content background-color: #e8e8e9;
+   h2 background-color: #989866;
+   h3 background-color: #cbcb99;
+
+   to change globally, do a search and replace.
+   New Colors:
+   header and footer background-color: #cc9933;
+   body background-color: #996633;
+
+   New Colors:
+   header and footer background-color: #666699;
+   body background-color: #9999cc;
+
+   New Colors:
+   header and footer background-color: #cc9933;
+   body background-color: #666633;
+
+   */
+/* ---------- Structural Positioning Rules (<div> id's) ---------- */
+#body {
+  width: 98%;
+  margin: 5px auto;
+  text-align: left;  
+  border-left: 0px solid #000;
+}
+
+#header, #footer {
+  /*width: 805px;*/
+  margin: 0;
+  color: #000;
+  /*background-color: #FFFFFF;
+  background-image:url(kinwashi_white.jpg);*/
+  padding: 6px 2px 2px 6px;
+  clear: both;
+}
+#header {
+    position:relative;
+    left:160px;
+  border-right: 0px solid #000;
+  border-top: 0px solid #000;
+  border-bottom: 0px solid #000;
+  /*height: 36px;*/
+}
+#footer {
+  /*height: 36px;*/
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-size: 80%;
+}
+#footer a {
+  text-decoration: none;
+}
+
+#content {
+  padding: .75em;
+  margin-left: 180px;  /* match that of #navmenu width: */
+  /*background-color: #e8e8e9;*/
+  text-align: justify;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  width: 664px;
+}
+
+
+#content blockquote { 
+  color: #255;
+  padding-left: 1em;
+  width: 45em;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  text-align: justify;
+/*   margin-right: 25%; */
+  float: none;
+}
+
+#content p {
+  margin-left: 2em;
+  width: 48em;
+/*   margin-right: 20%; */
+  padding-bottom: 1ex;
+}
+
+#content li {
+  margin-left: 5%;
+  margin-right: 10%;
+  padding-bottom: 0.5ex;
+}
+
+#navmenu {
+    position:absolute;
+    left:20;
+    top:0px;
+  /*float: left;*/
+  width: 160px;	/* match that of #content margin-left: */
+  padding: 0.5em;
+  font-family: "Zapf Chancery", Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 160%;
+  text-align: left;
+  color: #A81010;
+  line-height: 110%;
+}
+#navmenu a {
+  color: #980010;
+  font-family: "Zapf Chancery", "URW Chancery L", Tahoma, sans-serif;
+  text-decoration: none;
+}
+#navmenu a:hover {
+  color: #000000;
+  font-family: "Zapf Chancery", "URW Chancery L", Tahoma, sans-serif;
+  /* text-decoration: underline; */
+}
+#navmenu p {
+  margin: 0;
+}
+#navmenu hr {
+  margin: 0.5em 0 0.5em 0 !important;	/* IE doesn't grok !important */
+  margin: 0;				/* Therefore, IE gets this one */
+  height: 2px;
+  color: #000;
+  background-color: #000;
+  border: 0 solid #000;
+}
+#navmenu ul { 
+  margin-left: 20px;
+  padding-left: 0px;
+  margin-top: 1px;
+  padding-top: 0px;
+/*  list-style-type: disc;
+  list-style-image: url(./images/bullet.png);*/
+}
+
+/* ---------- Redefine/update standard xHTML tags ---------- */
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  background-color: #FFFFFF;
+  /*background-image: url(kinwashi_white.jpg);*/
+  text-align: center;  
+}
+
+p {
+  margin:  0.3em 0 0.3em 0;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  margin:  0em 0 0 0;
+  padding: 0.1em 0.2em 0.2em 0.2em;
+}
+h1 { font-size: 125%; /*background-color: #FFFFFF;*/ }
+h2 { font-size: 125%; background-color: #FFFFFF; font-style: italic; }
+h3 { font-size: 110%; background-color: #FFFFFF; }
+h4 { font-size: 110%; text-decoration: underline; /* border-bottom: 1px solid #000; */ }
+h5 { font-size: 110%;/* font-style: italic;*/ }
+h6 { font-size: 100%; font-style: italic; text-decoration: underline; }
+#content h1, #content h2, #content h3 {
+  border-top: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+}
+#header h1 { 
+  margin: 0;
+  font-size: 200%;
+  color: #980010;
+  font-family: "New Century Schoolbook";
+  /*background-color: #FFFFFF;
+  background-image: url(kinwashi_white.jpg);*/
+  text-align: center;
+}
+#header b { 
+  color: #930;
+}
+
+pre, code, tt {
+  font-size: 120%;
+  text-align: left;
+}
+
+tt { 
+  color: #930;
+  font-weight: bold;
+}
+code, pre { 
+  color: black;
+/*   color: #255; */
+/*  Padding: 0.15em; */
+}
+
+
+img { 
+  border: 0;
+}
+
+
+
+/* ---------- Custom classes ---------- */
+
+.floatleft { 
+  float: left;
+  clear: left;
+}
+.floatright { 
+  float: right;
+  clear: right;
+}
+.center {	/* MSIE doesn't handle this well */
+  text-align: center;  
+}
+
+.center table { 
+  width: 90%;	/* This needs to match the value on the 
+                   actual table declaration */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figure {
+  font-style: italic;
+  text-align: center;
+  padding: 6px;
+  margin: 4px;
+  background-color: #000;
+  border: 1px solid #000;
+}
+
+/* ---- from htmlize.el output for color-theme-aalto-light ----- */
+
+ /*  color-theme-scintilla */
+.comment {
+  /* font-lock-comment-face */
+  color: #228b22;
+  font-style: italic;
+}
+.constant {
+  /* font-lock-constant-face */
+  color: #0000ff;
+}
+.string {
+  /* font-lock-string-face */
+  color: #8b008b;
+}
+.type {
+  /* font-lock-type-face */
+  color: #000080;
+}
+.keyword {
+  /* font-lock-keyword-face */
+  color: #a020f0;
+}
+.function-name {
+  /* font-lock-function-name-face */
+  color: #008b8b;
+}
+.variable-name {
+  /* font-lock-variable-name-face */
+  color: #008b8b;
+}
+.cperl-array {
+  /* cperl-array-face */
+  color: red;
+}
+.cperl-nonoverridable {
+  /* cperl-nonoverridable-face */
+  color: #87ceeb;
+}
+.doc {
+  /* font-lock-doc-face */
+  color: #bc8f8f;
+}
+
+
+/* .comment { */
+/*   /\* font-lock-comment-face *\/ */
+/*   color: #90ee90; */
+/*   font-style: italic; */
+/* } */
+/* .constant { */
+/*   /\* font-lock-constant-face *\/ */
+/*   color: #7fffd4; */
+/* } */
+/* .string { */
+/*   /\* font-lock-string-face *\/ */
+/*   color: #ffa07a; */
+/* } */
+/* .type { */
+/*   /\* font-lock-type-face *\/ */
+/*   color: #ffff00; */
+/* } */
+
+/* .comment { */
+/*   /\* font-lock-comment-face *\/ */
+/*   color: #b22222; */
+/* } */
+/* .constant { */
+/*   /\* font-lock-constant-face *\/ */
+/*   color: #5f9ea0; */
+/* } */
+/* .string { */
+/*   /\* font-lock-string-face *\/ */
+/*   color: #bc8f8f; */
+/* } */
+/* .type { */
+/*   /\* font-lock-type-face *\/ */
+/*   color: #228b22; */
+/* } */
+
+
+/* ---------- Print Media - hide some things ---------- */
+
+@media print {
+  #navmenu, .noprint {
+    display: none;
+  }
+  #content {
+    margin: 0;
+  } 
+  #footer, .noprint { 
+    display: none;
+  }
+}
+/* eof */
