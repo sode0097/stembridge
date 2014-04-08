@@ -89,7 +89,7 @@
 }
 
 #navigation ul li a span {
-	background: url("tab-left.gif") no-repeat;
+	background: url("tab-left_new.gif") no-repeat;
 	padding: 5px 1em;
 }
 
@@ -156,7 +156,7 @@
   /*float: left;*/
   width: 160px;	/* match that of #content margin-left: */
   padding: 0.5em;
-  font-family: "Zapf Chancery", Tahoma, Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 160%;
   text-align: left;
   color: #A81010;
@@ -174,6 +174,8 @@
 }
 #navmenu p {
   margin: 0;
+  font-size:60%;
+  line-height:95%;
 }
 #navmenu hr {
   margin: 0.5em 0 0.5em 0 !important;	/* IE doesn't grok !important */
